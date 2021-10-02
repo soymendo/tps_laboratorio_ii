@@ -9,44 +9,84 @@ namespace Entidades
     /// <summary>
     /// La clase Vehiculo no deberá permitir que se instancien elementos de este tipo.
     /// </summary>
-    public sealed class Vehiculo
+    public abstract class Vehiculo
     {
-        enum EMarca
+        #region Atributos
+
+        private EMarca marca;
+        private string chasis;
+        private ConsoleColor color;
+
+        #endregion
+
+
+        #region "Enumerados"
+        public enum EMarca
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
         }
-        enum ETamanio
+        public enum ETamanio
         {
             Chico, Mediano, Grande
         }
-        EMarca marca;
-        string chasis;
-        ConsoleColor color;
+        #endregion
+
+
+
+        #region  "Propiedades"
 
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-        abstract ETamanio Tamanio { get; set; }
+        public abstract ETamanio Tamanio { get; set; }
 
+        #endregion
+
+
+
+        #region "Constructores"
+        /// <summary>
+        /// Único constructor de instancia.
+        /// </summary>
+        /// <param name="chasis">Chasis del vehículo</param>
+        /// <param name="marca">Marca del vehículo</param>
+        /// <param name="color">Color del vehículo</param>
+
+        public Vehiculo(string chasis, EMarca marca, ConsoleColor color)
+        {
+            this.chasis = chasis;
+            this.marca = marca;
+            this.color = color;
+        }
+        #endregion
+
+
+        #region "Metodos"
         /// <summary>
         /// Publica todos los datos del Vehiculo.
         /// </summary>
         /// <returns></returns>
-        sealed string Mostrar()
+        public virtual string Mostrar()
         {
-            return this;
+            return (string)this;
         }
 
-        private static explicit operator string(Vehiculo p)
+        #endregion
+
+
+
+        #region Sobrecargas
+
+        public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("CHASIS: {0}\r\n", p.chasis);
-            sb.AppendLine("MARCA : {0}\r\n", p.marca.ToString());
-            sb.AppendLine("COLOR : {0}\r\n", p.color.ToString());
+            sb.AppendFormat("CHASIS: {0}\r\n", p.chasis);
+            sb.AppendFormat("MARCA : {0}\r\n", p.marca.ToString());
+            sb.AppendFormat("COLOR : {0}\r\n", p.color.ToString());
             sb.AppendLine("---------------------");
 
-            return sb;
+            return sb.ToString();
         }
 
         /// <summary>
@@ -57,6 +97,10 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
+            if (v1 is null || v2 is null)
+            {
+                return false;
+            }
             return (v1.chasis == v2.chasis);
         }
         /// <summary>
@@ -67,7 +111,34 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
-            return (v1.chasis == v2.chasis);
+            return (v1 == v2);
         }
+
+
+        //public override bool Equals(object obj)
+        //{
+        //    Vehiculo otroVehiculo = obj as Vehiculo;
+        //    return otroVehiculo != null && this == otroVehiculo;
+        //}
+
+        //public override int GetHashCode()
+        //{
+        //    return (this.chasis).GetHashCode();
+        //}
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

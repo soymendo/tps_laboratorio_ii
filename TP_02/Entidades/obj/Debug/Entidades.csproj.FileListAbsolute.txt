@@ -15,3 +15,9 @@ C:\Users\Maxi\Desktop\subir Tps\TP-02\Entidades\obj\Debug\Entidades.csprojAssemb
 C:\Users\Maxi\Desktop\subir Tps\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Maxi\Desktop\subir Tps\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\Maxi\Desktop\subir Tps\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.dll
+C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\bin\Debug\Entidades.dll
+C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\bin\Debug\Entidades.pdb
