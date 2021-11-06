@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacaVideo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>gtx 1060ti</Nombre>
+  <Marca>
+    <MarcaProducto>Gigabyte</MarcaProducto>
+  </Marca>
+  <NuevosDatos>
+    <NuevosDatos>
+      <Dato>Coolers</Dato>
+      <Valor>2</Valor>
+    </NuevosDatos>
+    <NuevosDatos>
+      <Dato>Precio</Dato>
+      <Valor>500</Valor>
+    </NuevosDatos>
+  </NuevosDatos>
+  <TipoDeMemoria>GDDR1</TipoDeMemoria>
+  <CapacidadDeRam>6</CapacidadDeRam>
+  <FrecuenciaDeMemoria>4</FrecuenciaDeMemoria>
+  <Consumo>25</Consumo>
+  <Longitud>15</Longitud>
+  <Interfaz>3.1</Interfaz>
+  <MineriaBitcoin>0.24</MineriaBitcoin>
+  <MineriaEthereum>0.002</MineriaEthereum>
+</PlacaVideo>
