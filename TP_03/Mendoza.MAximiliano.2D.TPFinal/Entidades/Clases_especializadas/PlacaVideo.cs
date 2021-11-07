@@ -125,7 +125,8 @@ namespace Entidades.Clases_especializadas
         /// <returns></returns>
         public override string Informar()
         {
-            StringBuilder sb = new StringBuilder();        
+          
+            StringBuilder sb = new StringBuilder();
             sb.Append($"{base.ToString()}");
             sb.Append(InformarMemoria());
             sb.Append(InformarDatosGenerales());
@@ -135,8 +136,9 @@ namespace Entidades.Clases_especializadas
             {
                 sb.Append($"{item.ToString()}");
             }
-          
+
             return sb.ToString();
+           
         }
 
 

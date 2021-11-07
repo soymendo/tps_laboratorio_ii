@@ -66,11 +66,6 @@ namespace Entidades.Clases_generales
 
         public virtual string Mostrar(PlacaVideo p1, PlacaVideo p2,string dato)
         {
-        //    StringBuilder sb = new StringBuilder();
-        //    sb.AppendLine(CompararMemoria(p1, p2));
-        //    sb.AppendLine(CompararDatosGenerales(p1, p2));
-        //    sb.AppendLine(CompararMineria(p1, p2));
-        //    return sb.ToString();
             return "";
         }
         /// <summary>

@@ -21,8 +21,8 @@ namespace Test
 
 
             //creamos las placas
-            PlacaVideo p1 = new PlacaVideo("GTX 950ti", Marca.EMarca.Gigabyte);
-            PlacaVideo p2 = new PlacaVideo("GTX 250ti", Marca.EMarca.Gigabyte);
+            PlacaVideo p1 = new PlacaVideo("GTX 1050ti", Marca.EMarca.Gigabyte);
+            PlacaVideo p2 = new PlacaVideo("GTX 650ti", Marca.EMarca.Gigabyte);
             PlacaVideo p3 = new PlacaVideo("GTX 950ti", Marca.EMarca.Gigabyte);
 
 
@@ -168,13 +168,54 @@ namespace Test
 
             PlacaVideo pAux1 = new PlacaVideo();
             PlacaVideo pAux2 = new PlacaVideo();
+            try
+            {
+                pAux1 = pAux1.Leer<PlacaVideo>(ruta + $".\\GTX 1050ti.xml");
+            }
+            catch (Exception exe)
+            {
 
-            pAux1 = pAux1.Leer<PlacaVideo>(ruta + $".\\GTX 1050ti.xml");
-            pAux2 = pAux2.Leer<PlacaVideo>(ruta + $".\\GTX 650ti.xml");
+                Console.WriteLine(exe.Message);
+            }
 
-            //vemos si se cargaron
-            Console.WriteLine(pAux1.Informar());
-            Console.WriteLine(pAux2.Informar());
+            try
+            {
+                pAux2 = pAux2.Leer<PlacaVideo>(ruta + $".\\GTX 650ti.xml");
+            }
+            catch (Exception exa)
+            {
+
+                Console.WriteLine(exa.Message);
+            }
+
+
+
+            //vemos las placas cargadas
+
+            try
+            {
+                Console.WriteLine(pAux1.Informar());
+            }
+            catch (Exception esx)
+            {
+
+                Console.WriteLine(esx.Message);
+            }
+
+            try
+            {
+                Console.WriteLine(pAux2.Informar());
+            }
+            catch (Exception esx)
+            {
+
+                Console.WriteLine(esx.Message);
+            }
+            
+           
+
+
+
         }
     }
 }

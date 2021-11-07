@@ -25,8 +25,15 @@ namespace Entidades
         /// </summary>
         public Marca Marca
         {
-            get { return this.marca; }
-            set { this.marca = value; }
+            get
+            {
+                return this.marca;
+            }
+
+            set 
+            { 
+                this.marca = value;
+            }
         }
 
       
@@ -116,13 +123,20 @@ namespace Entidades
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine($"Nombre: {this.nombre}");
 
-            sb.AppendLine($"Nombre: {this.nombre}");
-            sb.AppendLine(this.marca.ToString());
-          
+                if(this.marca is null)
+                {
+                    throw new Exception();
+                }
+                else
+                {
+                    sb.AppendLine(this.marca.ToString());
+                }
+                
+                return sb.ToString();
 
-            return sb.ToString();
         }
 
 
