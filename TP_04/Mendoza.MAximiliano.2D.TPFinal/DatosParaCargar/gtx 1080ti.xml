@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacaVideo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>gtx 1080ti</Nombre>
+  <Marca>
+    <MarcaProducto>Amd</MarcaProducto>
+  </Marca>
+  <NuevosDatos>
+    <NuevosDatos>
+      <Dato>Coolers</Dato>
+      <Valor>3</Valor>
+    </NuevosDatos>
+    <NuevosDatos>
+      <Dato>Salida de video</Dato>
+      <Valor>4</Valor>
+    </NuevosDatos>
+  </NuevosDatos>
+  <TipoDeMemoria>GDDR5</TipoDeMemoria>
+  <CapacidadDeRam>12</CapacidadDeRam>
+  <FrecuenciaDeMemoria>6</FrecuenciaDeMemoria>
+  <Consumo>60</Consumo>
+  <Longitud>21</Longitud>
+  <Interfaz>5.2</Interfaz>
+  <MineriaBitcoin>0.07</MineriaBitcoin>
+  <MineriaEthereum>0.012</MineriaEthereum>
+</PlacaVideo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacaVideo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nombre>gtx 950</Nombre>
+  <Marca>
+    <MarcaProducto>Msi</MarcaProducto>
+  </Marca>
+  <NuevosDatos>
+    <NuevosDatos>
+      <Dato>Coolers</Dato>
+      <Valor>1</Valor>
+    </NuevosDatos>
+    <NuevosDatos>
+      <Dato>Precio</Dato>
+      <Valor>150</Valor>
+    </NuevosDatos>
+    <NuevosDatos>
+      <Dato>Salida de video</Dato>
+      <Valor>1</Valor>
+    </NuevosDatos>
+  </NuevosDatos>
+  <TipoDeMemoria>GDDR3</TipoDeMemoria>
+  <CapacidadDeRam>2</CapacidadDeRam>
+  <FrecuenciaDeMemoria>1</FrecuenciaDeMemoria>
+  <Consumo>34</Consumo>
+  <Longitud>19</Longitud>
+  <Interfaz>2.1</Interfaz>
+  <MineriaBitcoin>0.21</MineriaBitcoin>
+  <MineriaEthereum>0.012</MineriaEthereum>
+</PlacaVideo>
