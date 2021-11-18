@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oWNiifxfe+2/ElzxSGYfXzNo/Q6bBBnAxlQPJbBoaPNmDYmf3bI4jk0YBHdGmL9fNf/2ZLRSi9mE3Sy05j/GJg==",
+  "dgSpecHash": "wHEasaFB/MWx8TiBa4fTqse36blXzRvPgg2s+MN7e3IAuYKLwauoaIXkMxc6noIX0yUlqqMRGPKkAxEYtAQLCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maxi\\Desktop\\TPS3\\mio\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Maxi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

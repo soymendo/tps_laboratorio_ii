@@ -24,6 +24,7 @@ namespace Formulario
         private CancellationTokenSource cancellationTokenSource;
         private Task hiloSecundario;
         private int conteo = 1;
+        int cantidadPlacasInicial;
 
 
         public FormImporteDeDatos(Sistema sis)
@@ -35,6 +36,7 @@ namespace Formulario
             openFileDialog = new OpenFileDialog();
             placa = new PlacaVideo();
             rtbInfoDatosCargados.ReadOnly = true;
+            cantidadPlacasInicial = sistem.ListaDePlacasACargarLado1.Count;
         }
 
 
@@ -185,7 +187,9 @@ namespace Formulario
 
             if ((MessageBox.Show("¿Está seguro de querer salir?, Los datos que no se guardaron, no se cargaran en el Sistema", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No))
             {
+
                 e.Cancel = true;
+
             }
             else
             {
@@ -198,18 +202,18 @@ namespace Formulario
                 if (pgbBarra.Value != pgbBarra.Maximum)
                 {
 
-                    if (!(sistem.VerificarPlaca(placa)))
+
+                    if (sistem.ListaDePlacasACargarLado1.Count > cantidadPlacasInicial)
                     {
                         sistem.ListaDePlacasACargarLado1.Remove(placa);
                         sistem.ListaDePlacasACargarLado2.Remove(placa);
                         timer.Stop();
                     }
 
-                  
                 }
+
             }
 
-           
 
         }
     }
