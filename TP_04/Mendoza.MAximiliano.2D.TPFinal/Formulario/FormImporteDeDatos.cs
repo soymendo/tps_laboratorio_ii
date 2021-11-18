@@ -187,22 +187,29 @@ namespace Formulario
             {
                 e.Cancel = true;
             }
-
-
-            if (cancellationTokenSource is not null)
+            else
             {
-                cancellationTokenSource.Cancel();
-                timer.Stop();
+                if (cancellationTokenSource is not null)
+                {
+                    cancellationTokenSource.Cancel();
+                    timer.Stop();
+                }
+
+                if (pgbBarra.Value != pgbBarra.Maximum)
+                {
+
+                    if (!(sistem.VerificarPlaca(placa)))
+                    {
+                        sistem.ListaDePlacasACargarLado1.Remove(placa);
+                        sistem.ListaDePlacasACargarLado2.Remove(placa);
+                        timer.Stop();
+                    }
+
+                  
+                }
             }
 
-            if (pgbBarra.Value != pgbBarra.Maximum)
-            {
-
-
-                sistem.ListaDePlacasACargarLado1.Remove(placa);
-                sistem.ListaDePlacasACargarLado2.Remove(placa);
-                timer.Stop();
-            }
+           
 
         }
     }
