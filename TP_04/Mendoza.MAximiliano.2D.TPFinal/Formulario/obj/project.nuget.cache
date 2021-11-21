@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "99dPHECoKFgTbC04sedSkX/yUkJMqEvu5TOOVjKTgFFrnOtGlCGVX82a2nMPOn4nSctduy2GXw1Bl5bQk216nQ==",
+  "dgSpecHash": "bi0ibbJ2nFljQ8+VbQkx63RuvNQo8yjez35jY17OOsyN/E9+WyXU2UPSxfIRa7xJzdWcy6dNgd9LfRlNfjYbXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Formulario\\Formulario.csproj",
+  "projectFilePath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Formulario\\Formulario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Maxi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

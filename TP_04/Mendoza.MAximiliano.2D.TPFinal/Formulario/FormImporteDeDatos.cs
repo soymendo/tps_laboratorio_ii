@@ -27,6 +27,8 @@ namespace Formulario
         int cantidadPlacasInicial;
 
 
+
+
         public FormImporteDeDatos(Sistema sis)
         {
             InitializeComponent();
@@ -37,6 +39,7 @@ namespace Formulario
             placa = new PlacaVideo();
             rtbInfoDatosCargados.ReadOnly = true;
             cantidadPlacasInicial = sistem.ListaDePlacasACargarLado1.Count;
+
         }
 
 
@@ -79,21 +82,44 @@ namespace Formulario
         public void Espera()
         {
 
-            if (lblLista.InvokeRequired)
+            if (rtbInfoDatosCargados.InvokeRequired)
             {
                 Action delegado = Espera;
                 Invoke(delegado);
             }
             else
             {
-                sistem.ListaDePlacasACargarLado1.Add(placa);
-                sistem.ListaDePlacasACargarLado2.Add(placa);
-
-                for (int i = 0; i < placa.NuevosDatos.Count; i++)
+                try
                 {
-                    ComparaDatosNuevos cp = new ComparaDatosNuevos(placa, placa);
-                    cp.Dato = placa.NuevosDatos[i].Dato;
-                    if (!(sistem.VerificarIngresoDeDatosQueNoSeRepita(cp))) { sistem.Comparaciones.Add(cp); }
+                    if (rtbInfoDatosCargados.Text == "")
+                    {
+                        MessageBox.Show("Cargue datos primero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+
+                        timer.Enabled = true;
+                        pgbBarra.Value = 0;
+
+                        sistem.ListaDePlacasACargarLado1.Add(placa);
+                        sistem.ListaDePlacasACargarLado2.Add(placa);
+
+
+                        for (int i = 0; i < placa.NuevosDatos.Count; i++)
+                        {
+                            ComparaDatosNuevos cp = new ComparaDatosNuevos(placa, placa);
+                            cp.Dato = placa.NuevosDatos[i].Dato;
+                            if (!(sistem.VerificarIngresoDeDatosQueNoSeRepita(cp))) { sistem.Comparaciones.Add(cp); }
+                        }
+
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
 
             }
@@ -119,23 +145,20 @@ namespace Formulario
             }
             else
             {
+               
                 if (sistem.VerificarPlaca(placa))
                 {
                     MessageBox.Show("PLACA YA AGREGA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (rtbInfoDatosCargados.Text == "")
-                {
-                    MessageBox.Show("Cargue datos primero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
                 else
                 {
-                    timer.Enabled = true;
-                    pgbBarra.Value = 0;
-
                     cancellationTokenSource = new CancellationTokenSource();
                     CancellationToken cancellationToken = cancellationTokenSource.Token;
                     this.hiloSecundario = Task.Run(Espera, cancellationToken);
+
+
                 }
+
 
             }
 
@@ -157,7 +180,7 @@ namespace Formulario
             if (pgbBarra.Value < 100)
             {
                 pgbBarra.Value++;
-              
+
             }
             if (pgbBarra.Value == 100)
             {
@@ -207,6 +230,8 @@ namespace Formulario
                     {
                         sistem.ListaDePlacasACargarLado1.Remove(placa);
                         sistem.ListaDePlacasACargarLado2.Remove(placa);
+
+
                         timer.Stop();
                     }
 

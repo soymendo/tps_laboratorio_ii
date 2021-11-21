@@ -274,16 +274,22 @@ namespace Entidades.Clases_generales
         /// </summary>
         public void CargarPlacas()
         {
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 100", Marca.EMarca.Gigabyte));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 200", Marca.EMarca.Asus));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 300", Marca.EMarca.Gigabyte));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 400", Marca.EMarca.Amd));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 500", Marca.EMarca.Gigabyte));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 600", Marca.EMarca.Intel));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 700", Marca.EMarca.Gigabyte));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 800", Marca.EMarca.Msi));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 900", Marca.EMarca.Gigabyte));
-            listaDePlacasACargarLado1.Add(new PlacaVideo("GTX 1000", Marca.EMarca.Amd));
+           
+
+            listaDePlacasACargarLado1.AddRange(new PlacaVideo[]
+                                         
+                                       {
+                                        new PlacaVideo("GTX 100", Marca.EMarca.Gigabyte),
+                                        new PlacaVideo("GTX 200", Marca.EMarca.Asus),
+                                        new PlacaVideo("GTX 300", Marca.EMarca.Gigabyte),
+                                        new PlacaVideo("GTX 400", Marca.EMarca.Amd),
+                                        new PlacaVideo("GTX 500", Marca.EMarca.Gigabyte),
+                                        new PlacaVideo("GTX 600", Marca.EMarca.Intel),
+                                        new PlacaVideo("GTX 700", Marca.EMarca.Gigabyte),
+                                        new PlacaVideo("GTX 800", Marca.EMarca.Msi),
+                                        new PlacaVideo("GTX 900", Marca.EMarca.Gigabyte),
+                                        new PlacaVideo("GTX 1000", Marca.EMarca.Amd)
+                                       });
 
         }
 
@@ -388,6 +394,21 @@ namespace Entidades.Clases_generales
             return retorno;
         }
 
+
+
+
+        public bool algo(PlacaVideo p)
+        {
+            bool retorno = false;
+            if(p.Consumo>=1&& p.Consumo<=25)
+            {
+                retorno = true;
+            }
+
+            return retorno;
+        }
+
+
         /// <summary>
         /// analizamos segun el consumo
         /// </summary>
@@ -404,6 +425,9 @@ namespace Entidades.Clases_generales
             switch (datos)
             {
                 case "entre 1 y 25 W inclusive":
+
+
+                    //listaAnalisis = this.listaDePlacasACargarLado1.FindAll(algo);
                     listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Consumo >= 1 && l.Consumo <= 25);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj": {}
+    "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Maxi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj": {
+    "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj",
+        "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\Maxi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\obj\\",
+        "outputPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Maxi\\Desktop\\Nueva carpeta (4)\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj"
               }
             }
           }
