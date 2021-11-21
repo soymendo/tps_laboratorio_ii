@@ -79,12 +79,12 @@ namespace Formulario
         /// <summary>
         /// metodo para la task
         /// </summary>
-        public void Espera()
+        public void Guardar()
         {
 
             if (rtbInfoDatosCargados.InvokeRequired)
             {
-                Action delegado = Espera;
+                Action delegado = Guardar;
                 Invoke(delegado);
             }
             else
@@ -122,7 +122,7 @@ namespace Formulario
 
                 }
 
-            }
+           }
 
         }
 
@@ -154,7 +154,7 @@ namespace Formulario
                 {
                     cancellationTokenSource = new CancellationTokenSource();
                     CancellationToken cancellationToken = cancellationTokenSource.Token;
-                    this.hiloSecundario = Task.Run(Espera, cancellationToken);
+                    this.hiloSecundario = Task.Run(Guardar, cancellationToken);
 
 
                 }
