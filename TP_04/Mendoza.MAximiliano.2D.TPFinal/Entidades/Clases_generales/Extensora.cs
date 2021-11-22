@@ -59,7 +59,7 @@ namespace Entidades.Clases_generales
             }
             catch (Exception ex)
             {
-                throw new BaseDeDatosException("Ocurrió un error al tratar de leer la lista de celulares de la Base de Datos.", ex);
+                throw new BaseDeDatosException("Ocurrió un error al tratar de leer la lista de Placas de la Base de Datos.", ex);
             }
             finally
             {
