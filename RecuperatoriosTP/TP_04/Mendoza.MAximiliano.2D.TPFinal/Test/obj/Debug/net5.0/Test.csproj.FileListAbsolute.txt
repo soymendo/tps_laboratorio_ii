@@ -1,0 +1,157 @@
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Users\Maxi\source\repos\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\TPS3\mio\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\Nueva carpeta (4)\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.exe
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.deps.json
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\ref\Test.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
