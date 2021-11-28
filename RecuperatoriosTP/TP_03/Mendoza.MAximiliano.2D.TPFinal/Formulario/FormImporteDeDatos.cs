@@ -21,10 +21,7 @@ namespace Formulario
         private OpenFileDialog openFileDialog;
         string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         PlacaVideo placa;
-        private CancellationTokenSource cancellationTokenSource;
-        private Task hiloSecundario;
-        private int conteo = 1;
-        int cantidadPlacasInicial;
+
 
 
 
@@ -34,13 +31,12 @@ namespace Formulario
             InitializeComponent();
             Bitmap img = new Bitmap(Application.StartupPath + @"\img\FONDOHD6.jpg");
             this.BackgroundImage = img;
-            conteo = 0;
             this.sistem = sis;
             lstListaDePlacas.DataSource = sis.ListaDePlacasACargarLado1;
             openFileDialog = new OpenFileDialog();
             placa = new PlacaVideo();
             rtbInfoDatosCargados.ReadOnly = true;
-            cantidadPlacasInicial = sistem.ListaDePlacasACargarLado1.Count;
+           
 
         }
 
@@ -60,7 +56,7 @@ namespace Formulario
                     rtbInfoDatosCargados.Text = placa.Informar();
                     MessageBox.Show("Datos cargados");
                     this.btnAgregarLista.Text = $"Agregar {placa.Nombre} a la lista";
-                    lblAgregar.Text = "Guardando...";
+
                 }
 
             }
@@ -100,9 +96,6 @@ namespace Formulario
                     else
                     {
 
-                        timer.Enabled = true;
-                        pgbBarra.Value = 0;
-
                         sistem.ListaDePlacasACargarLado1.Add(placa);
                         sistem.ListaDePlacasACargarLado2.Add(placa);
 
@@ -124,7 +117,7 @@ namespace Formulario
 
                 }
 
-           }
+            }
 
         }
 
@@ -139,25 +132,45 @@ namespace Formulario
         /// <param name="e"></param>
         private void btnAgregarLista_Click(object sender, EventArgs e)
         {
-
-            if (pgbBarra.Value > 0 && pgbBarra.Value != pgbBarra.Maximum)
+            if (sistem.VerificarPlaca(placa))
             {
-                MessageBox.Show("El proceso todavia no termino, aguarde");
-                btnAgregarLista.Enabled = false;
+                MessageBox.Show("PLACA YA AGREGA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-               
-                if (sistem.VerificarPlaca(placa))
-                {
-                    MessageBox.Show("PLACA YA AGREGA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    cancellationTokenSource = new CancellationTokenSource();
-                    CancellationToken cancellationToken = cancellationTokenSource.Token;
-                    this.hiloSecundario = Task.Run(Guardar, cancellationToken);
 
+                try
+                {
+                    if (rtbInfoDatosCargados.Text == "")
+                    {
+                        MessageBox.Show("Cargue datos primero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+
+                        sistem.ListaDePlacasACargarLado1.Add(placa);
+                        sistem.ListaDePlacasACargarLado2.Add(placa);
+
+
+                        for (int i = 0; i < placa.NuevosDatos.Count; i++)
+                        {
+                            ComparaDatosNuevos cp = new ComparaDatosNuevos(placa, placa);
+                            cp.Dato = placa.NuevosDatos[i].Dato;
+                            if (!(sistem.VerificarIngresoDeDatosQueNoSeRepita(cp))) { sistem.Comparaciones.Add(cp); }
+                        }
+
+
+                        MessageBox.Show("Datos guardados");
+
+                        lstListaDePlacas.DataSource = null;
+                        lstListaDePlacas.DataSource = sistem.ListaDePlacasACargarLado1;
+                        this.btnAgregarLista.Text = "Placa Cargada";
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
 
@@ -167,40 +180,7 @@ namespace Formulario
         }
 
 
-        /// <summary>
-        /// timer para incrementar el progressbar
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-        private void timer_Tick(object sender, EventArgs e)
-        {
-
-            conteo++;
-
-            lblAgregar.Text = "Guardando..." + conteo.ToString() + "%";
-            if (pgbBarra.Value < 100)
-            {
-                pgbBarra.Value++;
-
-            }
-            if (pgbBarra.Value == 100)
-            {
-                timer.Enabled = false;
-                conteo = 0;
-                MessageBox.Show("Datos guardados");
-
-
-                btnAgregarLista.Enabled = true;
-
-                lstListaDePlacas.DataSource = null;
-                lstListaDePlacas.DataSource = sistem.ListaDePlacasACargarLado1;
-                this.btnAgregarLista.Text = "Placa Cargada";
-                lblAgregar.Text = "Guardado";
-
-            }
-        }
-
+     
 
         /// <summary>
         /// FormClosing
@@ -216,31 +196,6 @@ namespace Formulario
                 e.Cancel = true;
 
             }
-            else
-            {
-                if (cancellationTokenSource is not null)
-                {
-                    cancellationTokenSource.Cancel();
-                    timer.Stop();
-                }
-
-                if (pgbBarra.Value != pgbBarra.Maximum)
-                {
-
-
-                    if (sistem.ListaDePlacasACargarLado1.Count > cantidadPlacasInicial)
-                    {
-                        sistem.ListaDePlacasACargarLado1.Remove(placa);
-                        sistem.ListaDePlacasACargarLado2.Remove(placa);
-
-
-                        timer.Stop();
-                    }
-
-                }
-
-            }
-
 
         }
     }

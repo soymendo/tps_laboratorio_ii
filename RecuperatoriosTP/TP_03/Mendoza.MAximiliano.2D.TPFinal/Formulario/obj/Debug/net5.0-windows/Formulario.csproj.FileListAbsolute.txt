@@ -252,7 +252,6 @@ C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoz
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.FormComparar.resources
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.FormImporteDeDatos.resources
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.FormMenu.resources
-C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.FormSql.resources
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.Properties.Resources.resources
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.csproj.GenerateResource.cache
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_03\Mendoza.MAximiliano.2D.TPFinal\Formulario\obj\Debug\net5.0-windows\Formulario.GeneratedMSBuildEditorConfig.editorconfig

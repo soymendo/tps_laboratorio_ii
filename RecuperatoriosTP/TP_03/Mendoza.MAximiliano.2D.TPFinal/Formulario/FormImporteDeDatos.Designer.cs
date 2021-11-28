@@ -29,16 +29,12 @@ namespace Formulario
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.btnCargar = new System.Windows.Forms.Button();
             this.btnAgregarLista = new System.Windows.Forms.Button();
             this.rtbInfoDatosCargados = new System.Windows.Forms.RichTextBox();
             this.lstListaDePlacas = new System.Windows.Forms.ListBox();
             this.lblLista = new System.Windows.Forms.Label();
             this.lblDatos = new System.Windows.Forms.Label();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.pgbBarra = new System.Windows.Forms.ProgressBar();
-            this.lblAgregar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCargar
@@ -104,35 +100,12 @@ namespace Formulario
             this.lblDatos.TabIndex = 5;
             this.lblDatos.Text = "Datos de la placa : ";
             // 
-            // timer
-            // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // pgbBarra
-            // 
-            this.pgbBarra.Location = new System.Drawing.Point(291, 337);
-            this.pgbBarra.Name = "pgbBarra";
-            this.pgbBarra.Size = new System.Drawing.Size(177, 15);
-            this.pgbBarra.TabIndex = 6;
-            // 
-            // lblAgregar
-            // 
-            this.lblAgregar.AutoSize = true;
-            this.lblAgregar.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.lblAgregar.Location = new System.Drawing.Point(291, 319);
-            this.lblAgregar.Name = "lblAgregar";
-            this.lblAgregar.Size = new System.Drawing.Size(75, 15);
-            this.lblAgregar.TabIndex = 7;
-            this.lblAgregar.Text = "Guardando...";
-            // 
             // FormImporteDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(533, 414);
-            this.Controls.Add(this.lblAgregar);
-            this.Controls.Add(this.pgbBarra);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.lblLista);
             this.Controls.Add(this.lstListaDePlacas);
@@ -156,8 +129,5 @@ namespace Formulario
         private System.Windows.Forms.ListBox lstListaDePlacas;
         private System.Windows.Forms.Label lblLista;
         private System.Windows.Forms.Label lblDatos;
-        private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.ProgressBar pgbBarra;
-        private System.Windows.Forms.Label lblAgregar;
     }
 }

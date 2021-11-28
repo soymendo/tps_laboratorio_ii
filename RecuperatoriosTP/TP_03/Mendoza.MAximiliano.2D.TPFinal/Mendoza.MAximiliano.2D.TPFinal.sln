@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Formulario", "Formulario\Formulario.csproj", "{A4D5F7D8-15A8-445B-9648-4A73263EB515}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TP-04", "TP-04", "{6C8B837E-FB32-4F98-89DA-25F7F87C6BD7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TP-03", "TP-03", "{6C8B837E-FB32-4F98-89DA-25F7F87C6BD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

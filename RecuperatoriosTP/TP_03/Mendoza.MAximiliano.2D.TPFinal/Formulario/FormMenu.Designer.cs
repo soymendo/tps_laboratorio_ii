@@ -33,7 +33,6 @@ namespace Formulario
             this.btnComparar = new System.Windows.Forms.Button();
             this.btnImportar = new System.Windows.Forms.Button();
             this.btnAnalisis = new System.Windows.Forms.Button();
-            this.btnSql = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCargarDatos
@@ -52,7 +51,7 @@ namespace Formulario
             // 
             this.btnComparar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnComparar.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnComparar.Location = new System.Drawing.Point(202, 115);
+            this.btnComparar.Location = new System.Drawing.Point(202, 124);
             this.btnComparar.Name = "btnComparar";
             this.btnComparar.Size = new System.Drawing.Size(319, 59);
             this.btnComparar.TabIndex = 1;
@@ -64,7 +63,7 @@ namespace Formulario
             // 
             this.btnImportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnImportar.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnImportar.Location = new System.Drawing.Point(202, 268);
+            this.btnImportar.Location = new System.Drawing.Point(202, 315);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(319, 59);
             this.btnImportar.TabIndex = 2;
@@ -76,7 +75,7 @@ namespace Formulario
             // 
             this.btnAnalisis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAnalisis.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnAnalisis.Location = new System.Drawing.Point(202, 193);
+            this.btnAnalisis.Location = new System.Drawing.Point(202, 212);
             this.btnAnalisis.Name = "btnAnalisis";
             this.btnAnalisis.Size = new System.Drawing.Size(319, 59);
             this.btnAnalisis.TabIndex = 3;
@@ -84,25 +83,12 @@ namespace Formulario
             this.btnAnalisis.UseVisualStyleBackColor = false;
             this.btnAnalisis.Click += new System.EventHandler(this.btnAnalisis_Click);
             // 
-            // btnSql
-            // 
-            this.btnSql.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSql.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnSql.Location = new System.Drawing.Point(202, 344);
-            this.btnSql.Name = "btnSql";
-            this.btnSql.Size = new System.Drawing.Size(319, 59);
-            this.btnSql.TabIndex = 4;
-            this.btnSql.Text = "Base de Datos";
-            this.btnSql.UseVisualStyleBackColor = false;
-            this.btnSql.Click += new System.EventHandler(this.btnSql_Click);
-            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(709, 450);
-            this.Controls.Add(this.btnSql);
             this.Controls.Add(this.btnAnalisis);
             this.Controls.Add(this.btnImportar);
             this.Controls.Add(this.btnComparar);
@@ -122,6 +108,5 @@ namespace Formulario
         private System.Windows.Forms.Button btnComparar;
         private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.Button btnAnalisis;
-        private System.Windows.Forms.Button btnSql;
     }
 }

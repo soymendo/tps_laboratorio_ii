@@ -14,18 +14,13 @@ namespace Entidades.Clases_generales
     public class Sistema : IArchivoJson
 
     {
-        public delegate void Cargar();
-        public event Cargar CargarLista;
-
-
-
-
         private DatosGeneric<PlacaVideo> datosOriginales;
-
         private List<PlacaVideo> listaDePlacasACargarLado1;
         private List<PlacaVideo> listaDePlacasACargarLado2;
         private List<Comparar> comparaciones;
         private int capacidadDatosAAlmacenar;
+
+
         /// <summary>
         /// Contructor, inicializa la lista
         /// </summary>
@@ -34,13 +29,9 @@ namespace Entidades.Clases_generales
             this.datosOriginales = new DatosGeneric<PlacaVideo>();
             this.listaDePlacasACargarLado1 = new List<PlacaVideo>();
             this.comparaciones = new List<Comparar>();
-
-            this.CargarLista += CargarPlacas;
-            this.CargarLista += CargarDatos;
-            this.CargarLista += CargarComparaciones;
-
-            CargarLista.Invoke();
-
+            CargarPlacas();
+            CargarDatos();
+            CargarComparaciones();
             this.listaDePlacasACargarLado2 = new List<PlacaVideo>(listaDePlacasACargarLado1);
 
         }

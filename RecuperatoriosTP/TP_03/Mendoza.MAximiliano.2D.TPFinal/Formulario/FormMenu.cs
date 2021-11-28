@@ -49,20 +49,7 @@ namespace Formulario
             formAnalisis.ShowDialog();
         }
 
-        private void btnSql_Click(object sender, EventArgs e)
-        {
-            FormSql formSql = new FormSql(sistema);
-            formSql.ShowDialog();
-        }
-
-
-
-
-
-
-
-
-
+       
 
 
         /// <summary>

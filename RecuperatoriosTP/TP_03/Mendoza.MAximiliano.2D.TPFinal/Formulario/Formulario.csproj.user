@@ -16,8 +16,5 @@
     <Compile Update="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormSql.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
