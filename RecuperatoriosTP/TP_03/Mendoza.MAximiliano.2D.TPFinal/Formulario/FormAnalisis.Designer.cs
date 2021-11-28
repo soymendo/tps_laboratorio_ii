@@ -94,12 +94,14 @@ namespace Formulario
             // 
             // btnMarca
             // 
+            this.btnMarca.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMarca.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnMarca.Location = new System.Drawing.Point(594, 30);
             this.btnMarca.Name = "btnMarca";
             this.btnMarca.Size = new System.Drawing.Size(75, 23);
             this.btnMarca.TabIndex = 4;
             this.btnMarca.Text = "Analizar";
-            this.btnMarca.UseVisualStyleBackColor = true;
+            this.btnMarca.UseVisualStyleBackColor = false;
             this.btnMarca.Click += new System.EventHandler(this.btnMarca_Click);
             // 
             // lblNombreLista
@@ -113,12 +115,14 @@ namespace Formulario
             // 
             // btnMemoria
             // 
+            this.btnMemoria.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMemoria.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnMemoria.Location = new System.Drawing.Point(594, 110);
             this.btnMemoria.Name = "btnMemoria";
             this.btnMemoria.Size = new System.Drawing.Size(75, 23);
             this.btnMemoria.TabIndex = 9;
             this.btnMemoria.Text = "Analizar";
-            this.btnMemoria.UseVisualStyleBackColor = true;
+            this.btnMemoria.UseVisualStyleBackColor = false;
             this.btnMemoria.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmbMemoria
@@ -149,12 +153,14 @@ namespace Formulario
             // 
             // btnRam
             // 
+            this.btnRam.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRam.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnRam.Location = new System.Drawing.Point(594, 188);
             this.btnRam.Name = "btnRam";
             this.btnRam.Size = new System.Drawing.Size(75, 23);
             this.btnRam.TabIndex = 13;
             this.btnRam.Text = "Analizar";
-            this.btnRam.UseVisualStyleBackColor = true;
+            this.btnRam.UseVisualStyleBackColor = false;
             this.btnRam.Click += new System.EventHandler(this.button2_Click);
             // 
             // cmbRam
@@ -191,12 +197,14 @@ namespace Formulario
             // 
             // btnConsumo
             // 
+            this.btnConsumo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnConsumo.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnConsumo.Location = new System.Drawing.Point(594, 261);
             this.btnConsumo.Name = "btnConsumo";
             this.btnConsumo.Size = new System.Drawing.Size(75, 23);
             this.btnConsumo.TabIndex = 17;
             this.btnConsumo.Text = "Analizar";
-            this.btnConsumo.UseVisualStyleBackColor = true;
+            this.btnConsumo.UseVisualStyleBackColor = false;
             this.btnConsumo.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // cmbConsumo
@@ -234,12 +242,14 @@ namespace Formulario
             // 
             // btnPlacasSegunRam
             // 
+            this.btnPlacasSegunRam.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPlacasSegunRam.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnPlacasSegunRam.Location = new System.Drawing.Point(594, 334);
             this.btnPlacasSegunRam.Name = "btnPlacasSegunRam";
             this.btnPlacasSegunRam.Size = new System.Drawing.Size(75, 23);
             this.btnPlacasSegunRam.TabIndex = 21;
             this.btnPlacasSegunRam.Text = "Analizar";
-            this.btnPlacasSegunRam.UseVisualStyleBackColor = true;
+            this.btnPlacasSegunRam.UseVisualStyleBackColor = false;
             this.btnPlacasSegunRam.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // cmbPlacasSegunRam
@@ -277,12 +287,14 @@ namespace Formulario
             // 
             // btnSegunTipo
             // 
+            this.btnSegunTipo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSegunTipo.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnSegunTipo.Location = new System.Drawing.Point(594, 454);
             this.btnSegunTipo.Name = "btnSegunTipo";
             this.btnSegunTipo.Size = new System.Drawing.Size(75, 23);
             this.btnSegunTipo.TabIndex = 25;
             this.btnSegunTipo.Text = "Analizar";
-            this.btnSegunTipo.UseVisualStyleBackColor = true;
+            this.btnSegunTipo.UseVisualStyleBackColor = false;
             this.btnSegunTipo.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // cmbSeguntTipo
@@ -322,7 +334,7 @@ namespace Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(698, 653);
             this.Controls.Add(this.lblSegunTipo);
             this.Controls.Add(this.btnSegunTipo);

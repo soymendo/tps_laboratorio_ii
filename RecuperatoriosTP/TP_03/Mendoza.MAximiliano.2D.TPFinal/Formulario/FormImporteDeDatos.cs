@@ -32,6 +32,8 @@ namespace Formulario
         public FormImporteDeDatos(Sistema sis)
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FONDOHD6.jpg");
+            this.BackgroundImage = img;
             conteo = 0;
             this.sistem = sis;
             lstListaDePlacas.DataSource = sis.ListaDePlacasACargarLado1;

@@ -19,6 +19,8 @@ namespace Formulario
         public FormAnalisis(Sistema sis)
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FONDOHD5.jpg");
+            this.BackgroundImage = img;
             this.sistem = sis;
             lsbListaDePlacas.DataSource = this.sistem.ListaDePlacasACargarLado1;
             cmbMarca.DataSource = Enum.GetValues(typeof(Marca.EMarca));

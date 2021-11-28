@@ -23,6 +23,8 @@ namespace Formulario
         public FormSql(Sistema sis)
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FONDOHD7.jpg");
+            this.BackgroundImage = img;
             this.sistem = sis;
             cmbMarca.DataSource = Enum.GetValues(typeof(Marca.EMarca));
             cmbTipoMemoria.DataSource = Enum.GetValues(typeof(PlacaVideo.ETipoMemoria));

@@ -22,6 +22,8 @@ namespace Formulario
         public FormComparar(Sistema sis)
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FONDOHD4.jpg");
+            this.BackgroundImage = img;
             this.sistem = sis;
            
             cmbPlacasLado1.DataSource = this.sistem.ListaDePlacasACargarLado1;

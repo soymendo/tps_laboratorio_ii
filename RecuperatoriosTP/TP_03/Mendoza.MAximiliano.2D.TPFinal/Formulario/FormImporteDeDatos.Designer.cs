@@ -43,22 +43,26 @@ namespace Formulario
             // 
             // btnCargar
             // 
+            this.btnCargar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnCargar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnCargar.Location = new System.Drawing.Point(40, 354);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(200, 36);
             this.btnCargar.TabIndex = 0;
             this.btnCargar.Text = "Cargar";
-            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // btnAgregarLista
             // 
+            this.btnAgregarLista.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnAgregarLista.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnAgregarLista.Location = new System.Drawing.Point(291, 354);
             this.btnAgregarLista.Name = "btnAgregarLista";
             this.btnAgregarLista.Size = new System.Drawing.Size(177, 36);
             this.btnAgregarLista.TabIndex = 1;
             this.btnAgregarLista.Text = "Agregar a la lista";
-            this.btnAgregarLista.UseVisualStyleBackColor = true;
+            this.btnAgregarLista.UseVisualStyleBackColor = false;
             this.btnAgregarLista.Click += new System.EventHandler(this.btnAgregarLista_Click);
             // 
             // rtbInfoDatosCargados
@@ -83,7 +87,7 @@ namespace Formulario
             // lblLista
             // 
             this.lblLista.AutoSize = true;
-            this.lblLista.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblLista.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblLista.Location = new System.Drawing.Point(291, 31);
             this.lblLista.Name = "lblLista";
             this.lblLista.Size = new System.Drawing.Size(139, 15);
@@ -114,6 +118,7 @@ namespace Formulario
             // lblAgregar
             // 
             this.lblAgregar.AutoSize = true;
+            this.lblAgregar.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.lblAgregar.Location = new System.Drawing.Point(291, 319);
             this.lblAgregar.Name = "lblAgregar";
             this.lblAgregar.Size = new System.Drawing.Size(75, 15);

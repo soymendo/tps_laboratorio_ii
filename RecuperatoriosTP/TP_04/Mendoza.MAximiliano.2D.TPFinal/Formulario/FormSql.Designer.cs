@@ -72,7 +72,7 @@ namespace Formulario
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Thistle;
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Controls.Add(this.lblNombre);
             this.panel1.Controls.Add(this.lblEthe);
             this.panel1.Controls.Add(this.lblMArca);
@@ -102,6 +102,7 @@ namespace Formulario
             this.panel1.Controls.Add(this.cmbTipoMemoria);
             this.panel1.Controls.Add(this.txtCapacidaddeRam);
             this.panel1.Controls.Add(this.cmbMarca);
+            this.panel1.ForeColor = System.Drawing.Color.Gold;
             this.panel1.Location = new System.Drawing.Point(23, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(282, 387);
@@ -438,6 +439,7 @@ namespace Formulario
             // lblPlacas
             // 
             this.lblPlacas.AutoSize = true;
+            this.lblPlacas.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lblPlacas.Location = new System.Drawing.Point(355, 9);
             this.lblPlacas.Name = "lblPlacas";
             this.lblPlacas.Size = new System.Drawing.Size(163, 15);
@@ -447,6 +449,7 @@ namespace Formulario
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label1.Location = new System.Drawing.Point(662, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 15);
@@ -457,7 +460,7 @@ namespace Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(900, 501);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlacas);

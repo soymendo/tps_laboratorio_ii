@@ -6557,11 +6557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\Pruebas.Unitarias.csproj",
+      "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\Pruebas.Unitarias.csproj",
       "projectName": "Pruebas.Unitarias",
-      "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\Pruebas.Unitarias.csproj",
+      "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\Pruebas.Unitarias.csproj",
       "packagesPath": "C:\\Users\\Maxi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\obj\\",
+      "outputPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6582,8 +6582,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_04\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Entidades\\Entidades.csproj"
             }
           }
         }

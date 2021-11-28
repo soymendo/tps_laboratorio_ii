@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Pruebas.Unitarias
-build_property.ProjectDir = C:\Users\Maxi\Desktop\subir tps\Nueva carpeta\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Pruebas.Unitarias\
+build_property.ProjectDir = C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_03\Mendoza.MAximiliano.2D.TPFinal\Pruebas.Unitarias\

@@ -30,7 +30,6 @@ namespace Formulario
         private void InitializeComponent()
         {
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
             this.lblMArca = new System.Windows.Forms.Label();
             this.lblTipoMemoria = new System.Windows.Forms.Label();
             this.lblCapacidadRam = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@ namespace Formulario
             this.lblMBIT = new System.Windows.Forms.Label();
             this.lblEthe = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lnlBombre = new System.Windows.Forms.Label();
             this.pnlPanelDatosNuevos.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,20 +77,13 @@ namespace Formulario
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(318, 9);
+            this.lblTitulo.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblTitulo.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(239, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(209, 15);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "CARGA DE NUEVA PLACA AL SISTEMA";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(12, 20);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(51, 15);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombre";
             // 
             // lblMArca
             // 
@@ -339,6 +332,8 @@ namespace Formulario
             // lblDetalle
             // 
             this.lblDetalle.AutoSize = true;
+            this.lblDetalle.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblDetalle.ForeColor = System.Drawing.Color.DarkBlue;
             this.lblDetalle.Location = new System.Drawing.Point(330, 158);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(148, 15);
@@ -348,6 +343,7 @@ namespace Formulario
             // btnCrear
             // 
             this.btnCrear.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnCrear.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnCrear.Location = new System.Drawing.Point(545, 308);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(110, 50);
@@ -358,12 +354,13 @@ namespace Formulario
             // 
             // pnlPanelDatosNuevos
             // 
-            this.pnlPanelDatosNuevos.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlPanelDatosNuevos.BackColor = System.Drawing.Color.DarkGreen;
             this.pnlPanelDatosNuevos.Controls.Add(this.btnDatoNuevo);
             this.pnlPanelDatosNuevos.Controls.Add(this.txtNuevoDato);
             this.pnlPanelDatosNuevos.Controls.Add(this.txtValor);
             this.pnlPanelDatosNuevos.Controls.Add(this.lblDatoNuevo);
             this.pnlPanelDatosNuevos.Controls.Add(this.lblValor);
+            this.pnlPanelDatosNuevos.ForeColor = System.Drawing.Color.Gainsboro;
             this.pnlPanelDatosNuevos.Location = new System.Drawing.Point(327, 47);
             this.pnlPanelDatosNuevos.Name = "pnlPanelDatosNuevos";
             this.pnlPanelDatosNuevos.Size = new System.Drawing.Size(200, 100);
@@ -371,17 +368,21 @@ namespace Formulario
             // 
             // btnDatoNuevo
             // 
+            this.btnDatoNuevo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnDatoNuevo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnDatoNuevo.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnDatoNuevo.Location = new System.Drawing.Point(71, 69);
             this.btnDatoNuevo.Name = "btnDatoNuevo";
             this.btnDatoNuevo.Size = new System.Drawing.Size(112, 23);
             this.btnDatoNuevo.TabIndex = 30;
             this.btnDatoNuevo.Text = "Carga dato nuevo";
-            this.btnDatoNuevo.UseVisualStyleBackColor = true;
+            this.btnDatoNuevo.UseVisualStyleBackColor = false;
             this.btnDatoNuevo.Click += new System.EventHandler(this.btnDatoNuevo_Click);
             // 
             // btnXml
             // 
             this.btnXml.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnXml.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnXml.Location = new System.Drawing.Point(545, 375);
             this.btnXml.Name = "btnXml";
             this.btnXml.Size = new System.Drawing.Size(110, 50);
@@ -455,8 +456,8 @@ namespace Formulario
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.lblNombre);
+            this.panel1.BackColor = System.Drawing.Color.DarkGreen;
+            this.panel1.Controls.Add(this.lnlBombre);
             this.panel1.Controls.Add(this.lblEthe);
             this.panel1.Controls.Add(this.lblMArca);
             this.panel1.Controls.Add(this.lblMBIT);
@@ -485,16 +486,26 @@ namespace Formulario
             this.panel1.Controls.Add(this.cmbTipoMemoria);
             this.panel1.Controls.Add(this.txtCapacidaddeRam);
             this.panel1.Controls.Add(this.cmbMarca);
-            this.panel1.Location = new System.Drawing.Point(12, 48);
+            this.panel1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Location = new System.Drawing.Point(12, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(282, 377);
             this.panel1.TabIndex = 39;
+            // 
+            // lnlBombre
+            // 
+            this.lnlBombre.AutoSize = true;
+            this.lnlBombre.Location = new System.Drawing.Point(14, 21);
+            this.lnlBombre.Name = "lnlBombre";
+            this.lnlBombre.Size = new System.Drawing.Size(51, 15);
+            this.lnlBombre.TabIndex = 39;
+            this.lnlBombre.Text = "Nombre";
             // 
             // FormCargaDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Thistle;
+            this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(709, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnXml);
@@ -518,7 +529,6 @@ namespace Formulario
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblMArca;
         private System.Windows.Forms.Label lblTipoMemoria;
         private System.Windows.Forms.Label lblCapacidadRam;
@@ -558,5 +568,6 @@ namespace Formulario
         private System.Windows.Forms.Label lblMBIT;
         private System.Windows.Forms.Label lblEthe;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lnlBombre;
     }
 }

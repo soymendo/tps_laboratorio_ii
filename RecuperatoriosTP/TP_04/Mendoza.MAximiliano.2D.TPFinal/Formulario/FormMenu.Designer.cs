@@ -38,52 +38,62 @@ namespace Formulario
             // 
             // btnCargarDatos
             // 
+            this.btnCargarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCargarDatos.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnCargarDatos.Location = new System.Drawing.Point(202, 36);
             this.btnCargarDatos.Name = "btnCargarDatos";
             this.btnCargarDatos.Size = new System.Drawing.Size(319, 59);
             this.btnCargarDatos.TabIndex = 0;
-            this.btnCargarDatos.Text = "Cargar Datos";
-            this.btnCargarDatos.UseVisualStyleBackColor = true;
+            this.btnCargarDatos.Text = "Carga de Datos";
+            this.btnCargarDatos.UseVisualStyleBackColor = false;
             this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click);
             // 
             // btnComparar
             // 
+            this.btnComparar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnComparar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnComparar.Location = new System.Drawing.Point(202, 115);
             this.btnComparar.Name = "btnComparar";
             this.btnComparar.Size = new System.Drawing.Size(319, 59);
             this.btnComparar.TabIndex = 1;
-            this.btnComparar.Text = "Comparar";
-            this.btnComparar.UseVisualStyleBackColor = true;
+            this.btnComparar.Text = "Comparar placas";
+            this.btnComparar.UseVisualStyleBackColor = false;
             this.btnComparar.Click += new System.EventHandler(this.btnComparar_Click);
             // 
             // btnImportar
             // 
+            this.btnImportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnImportar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnImportar.Location = new System.Drawing.Point(202, 268);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(319, 59);
             this.btnImportar.TabIndex = 2;
-            this.btnImportar.Text = "Importar Datos";
-            this.btnImportar.UseVisualStyleBackColor = true;
+            this.btnImportar.Text = "Importar placas al Sistema";
+            this.btnImportar.UseVisualStyleBackColor = false;
             this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
             // btnAnalisis
             // 
+            this.btnAnalisis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAnalisis.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnAnalisis.Location = new System.Drawing.Point(202, 193);
             this.btnAnalisis.Name = "btnAnalisis";
             this.btnAnalisis.Size = new System.Drawing.Size(319, 59);
             this.btnAnalisis.TabIndex = 3;
-            this.btnAnalisis.Text = "Analisis de datos";
-            this.btnAnalisis.UseVisualStyleBackColor = true;
+            this.btnAnalisis.Text = "Analisis de Datos";
+            this.btnAnalisis.UseVisualStyleBackColor = false;
             this.btnAnalisis.Click += new System.EventHandler(this.btnAnalisis_Click);
             // 
             // btnSql
             // 
+            this.btnSql.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSql.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnSql.Location = new System.Drawing.Point(202, 344);
             this.btnSql.Name = "btnSql";
             this.btnSql.Size = new System.Drawing.Size(319, 59);
             this.btnSql.TabIndex = 4;
             this.btnSql.Text = "Base de Datos";
-            this.btnSql.UseVisualStyleBackColor = true;
+            this.btnSql.UseVisualStyleBackColor = false;
             this.btnSql.Click += new System.EventHandler(this.btnSql_Click);
             // 
             // FormMenu
@@ -97,6 +107,8 @@ namespace Formulario
             this.Controls.Add(this.btnImportar);
             this.Controls.Add(this.btnComparar);
             this.Controls.Add(this.btnCargarDatos);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";

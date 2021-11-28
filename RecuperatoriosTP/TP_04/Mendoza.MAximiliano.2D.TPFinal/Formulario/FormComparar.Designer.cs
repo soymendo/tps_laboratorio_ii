@@ -65,12 +65,14 @@ namespace Formulario
             // 
             // btnComparar
             // 
+            this.btnComparar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnComparar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnComparar.Location = new System.Drawing.Point(619, 28);
             this.btnComparar.Name = "btnComparar";
             this.btnComparar.Size = new System.Drawing.Size(86, 23);
             this.btnComparar.TabIndex = 3;
             this.btnComparar.Text = "Comparar";
-            this.btnComparar.UseVisualStyleBackColor = true;
+            this.btnComparar.UseVisualStyleBackColor = false;
             this.btnComparar.Click += new System.EventHandler(this.btnComparar_Click);
             // 
             // rtbInfo
@@ -93,12 +95,14 @@ namespace Formulario
             // 
             // btnGuardarTxt
             // 
+            this.btnGuardarTxt.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnGuardarTxt.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnGuardarTxt.Location = new System.Drawing.Point(12, 340);
             this.btnGuardarTxt.Name = "btnGuardarTxt";
             this.btnGuardarTxt.Size = new System.Drawing.Size(131, 64);
             this.btnGuardarTxt.TabIndex = 6;
             this.btnGuardarTxt.Text = "Guardar Informacion en formato .txt";
-            this.btnGuardarTxt.UseVisualStyleBackColor = true;
+            this.btnGuardarTxt.UseVisualStyleBackColor = false;
             this.btnGuardarTxt.Click += new System.EventHandler(this.btnGuardarTxt_Click);
             // 
             // rtbInfoPlaca1
@@ -137,17 +141,20 @@ namespace Formulario
             // 
             // btnJson
             // 
+            this.btnJson.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnJson.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnJson.Location = new System.Drawing.Point(198, 340);
             this.btnJson.Name = "btnJson";
             this.btnJson.Size = new System.Drawing.Size(131, 64);
             this.btnJson.TabIndex = 11;
             this.btnJson.Text = "Guardar Informacion en formato .json";
-            this.btnJson.UseVisualStyleBackColor = true;
+            this.btnJson.UseVisualStyleBackColor = false;
             this.btnJson.Click += new System.EventHandler(this.btnJson_Click);
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
+            this.lblInfo.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lblInfo.Location = new System.Drawing.Point(12, 60);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(96, 15);
@@ -157,6 +164,7 @@ namespace Formulario
             // lblLado1
             // 
             this.lblLado1.AutoSize = true;
+            this.lblLado1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lblLado1.Location = new System.Drawing.Point(349, 60);
             this.lblLado1.Name = "lblLado1";
             this.lblLado1.Size = new System.Drawing.Size(42, 15);
@@ -166,6 +174,7 @@ namespace Formulario
             // lblLado2
             // 
             this.lblLado2.AutoSize = true;
+            this.lblLado2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lblLado2.Location = new System.Drawing.Point(544, 60);
             this.lblLado2.Name = "lblLado2";
             this.lblLado2.Size = new System.Drawing.Size(42, 15);

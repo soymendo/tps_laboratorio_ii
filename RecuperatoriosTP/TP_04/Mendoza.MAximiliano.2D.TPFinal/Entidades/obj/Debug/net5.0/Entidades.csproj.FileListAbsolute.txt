@@ -82,3 +82,15 @@ C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\RecuperatoriosTP\TP_04\Mendoza.MAximiliano.2D.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb

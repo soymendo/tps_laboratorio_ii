@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OA+B9+eJw/l+qxXQOGxfGAF+R1yLBQeYIYMo608B0EJwAwiRUkH/NiWBMeJgkuOd09ccaHWpMC3HqBBljc7wsw==",
+  "dgSpecHash": "pFiq1MaVM2hIxzUcoKs8K44QHznzdbgzJ8lu8vH7e+tXyFljiGIJvBiRUPWnUWerUehJVvrG2QdXPQKMq5visg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maxi\\Desktop\\subir tps\\Nueva carpeta\\tps_laboratorio_ii\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\Pruebas.Unitarias.csproj",
+  "projectFilePath": "C:\\Users\\Maxi\\Desktop\\tp-github\\tps_laboratorio_ii\\TP_03\\Mendoza.MAximiliano.2D.TPFinal\\Pruebas.Unitarias\\Pruebas.Unitarias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxi\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Maxi\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

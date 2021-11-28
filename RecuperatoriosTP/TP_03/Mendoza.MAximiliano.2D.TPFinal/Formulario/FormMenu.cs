@@ -19,8 +19,10 @@ namespace Formulario
         public FormMenu()
         {
             InitializeComponent();
-            
-          
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FONDOHD.jpg");
+            this.BackgroundImage = img;
+
+
         }
 
         private void btnCargarDatos_Click(object sender, EventArgs e)
