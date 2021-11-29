@@ -314,13 +314,37 @@ namespace Entidades.Clases_generales
         {
             double cantLista = this.listaDePlacasACargarLado1.Count;
             List<PlacaVideo> listaAnalisis = new List<PlacaVideo>();
-            listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == marca);
+  
+            listaAnalisis = BuscarSegunPlaca(this.listaDePlacasACargarLado1,marca);
             double cantAnalisis = listaAnalisis.Count;
             double analisisFinal;
 
             analisisFinal = (cantAnalisis * 100) / cantLista;
 
             return $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con la marca {marca}";
+
+        }
+
+
+        /// <summary>
+        /// obtiene una lista de placas segun el tipo de marca dado
+        /// </summary>
+        /// <param name="lista"></param>
+        /// <param name="eTipo"></param>
+        /// <returns></returns>
+        public List<PlacaVideo> BuscarSegunPlaca(List<PlacaVideo> lista, Marca.EMarca marca)
+        {
+            List<PlacaVideo> retorno = new List<PlacaVideo>();
+
+            foreach (var item in lista)
+            {
+                if (item.Marca.MarcaProducto == marca)
+                {
+                    retorno.Add(item);
+                }
+            }
+
+            return retorno;
 
         }
 
@@ -334,12 +358,10 @@ namespace Entidades.Clases_generales
         {
             double cantLista = this.listaDePlacasACargarLado1.Count;
             List<PlacaVideo> listaAnalisis = new List<PlacaVideo>();
-            listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.TipoDeMemoria == tipo);
+            listaAnalisis = BuscarSegunTipoMemoria(this.listaDePlacasACargarLado1, tipo);
             double cantAnalisis = listaAnalisis.Count;
             double analisisFinal;
-
             analisisFinal = (cantAnalisis * 100) / cantLista;
-
             return $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con tipo de memoria {tipo}";
 
         }
@@ -363,28 +385,28 @@ namespace Entidades.Clases_generales
             switch (datos)
             {
                 case "entre 1 y 4 gb inclusive":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.CapacidadDeRam >= 1 && l.CapacidadDeRam <= 4);
+                    listaAnalisis = listaRam(this.listaDePlacasACargarLado1, 1, 4);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con ram entre 1 y 4 gb inclusive";
                     break;
                 case "entre 4 y 8 gb inclusive":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.CapacidadDeRam >= 4 && l.CapacidadDeRam <= 8);
+                    listaAnalisis = listaRam(this.listaDePlacasACargarLado1, 4, 8);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con ram entre 4 y 8 gb inclusive";
                     break;
                 case "entre 8 y 16 gb inclusive":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.CapacidadDeRam >= 8 && l.CapacidadDeRam <= 16);
+                    listaAnalisis = listaRam(this.listaDePlacasACargarLado1, 8, 16);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con ram entre 8 y 16 gb inclusive";
                     break;
                 case "16gb o mas":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.CapacidadDeRam >= 16);
+                    listaAnalisis = listaRam(this.listaDePlacasACargarLado1,16);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
@@ -397,17 +419,53 @@ namespace Entidades.Clases_generales
 
 
 
+        /// <summary>
+        /// Metodo que devuelve una lista de placas segun los valores de capacidad de ram proporcionados
+        /// </summary>
+        /// <param name="listaLado1"></param>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <returns></returns>
 
-        public bool algo(PlacaVideo p)
+        private List<PlacaVideo> listaRam(List<PlacaVideo> listaLado1, int num1, int num2)
         {
-            bool retorno = false;
-            if (p.Consumo >= 1 && p.Consumo <= 25)
-            {
-                retorno = true;
-            }
+            List<PlacaVideo> retorno = new List<PlacaVideo>();
 
+            foreach (var item in listaLado1)
+            {
+                if ((item.CapacidadDeRam >= num1 && item.CapacidadDeRam <= num2))
+                {
+                    retorno.Add(item);
+                }
+
+            }
             return retorno;
         }
+
+        /// <summary>
+        /// Metodo que devuelve una lista de placas segun los valores de de capacidad de ram proporcionados
+        /// </summary>
+        /// <param name="listaLado1"></param>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <returns></returns>
+        private List<PlacaVideo> listaRam(List<PlacaVideo> listaLado1, int num)
+        {
+            List<PlacaVideo> retorno = new List<PlacaVideo>();
+
+            foreach (var item in listaLado1)
+            {
+                if (item.CapacidadDeRam >= num)
+                {
+                    retorno.Add(item);
+                }
+
+            }
+            return retorno;
+        }
+
+
+
 
 
         /// <summary>
@@ -426,38 +484,39 @@ namespace Entidades.Clases_generales
             switch (datos)
             {
                 case "entre 1 y 25 W inclusive":
-
-
-                    //listaAnalisis = this.listaDePlacasACargarLado1.FindAll(algo);
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Consumo >= 1 && l.Consumo <= 25);
+                  
+                    listaAnalisis = lista(this.listaDePlacasACargarLado1,1,25);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con consumo entre 1 y 25 W inclusive";
                     break;
                 case "entre 25 y 50 W inclusive":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Consumo >= 25 && l.Consumo <= 50);
+               
+                    listaAnalisis = lista(this.listaDePlacasACargarLado1, 25, 50);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con consumo entre 25 y 50 W inclusive";
                     break;
                 case "entre 50 y 75 W inclusive":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Consumo >= 50 && l.Consumo <= 75);
+                   
+                    listaAnalisis = lista(this.listaDePlacasACargarLado1, 50, 75);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con consumo entre 50 y 75 W inclusive";
                     break;
                 case "entre 75 y 100 W inclusive":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Consumo >= 75 && l.Consumo <= 100);
+                   
+                    listaAnalisis = lista(this.listaDePlacasACargarLado1, 75, 100);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
                     retorno = $"En el sistema hay {string.Format("{0:0.00}", analisisFinal)} %  de placas registradas con consumo entre 75 y 100 W inclusive";
                     break;
                 case "100 W o mas":
-                    listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.CapacidadDeRam >= 100);
+                    listaAnalisis = lista(this.listaDePlacasACargarLado1, 100);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
 
@@ -467,6 +526,57 @@ namespace Entidades.Clases_generales
 
             return retorno;
         }
+
+
+
+        /// <summary>
+        /// Metodo que devuelve una lista de placas segun los valores de consumo proporcionados
+        /// </summary>
+        /// <param name="listaLado1"></param>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <returns></returns>
+
+        private List<PlacaVideo> lista(List<PlacaVideo> listaLado1, int num1, int num2)
+        {
+            List<PlacaVideo> retorno = new List<PlacaVideo>();
+
+            foreach (var item in listaLado1)
+            {
+                if ((item.Consumo >= num1 && item.Consumo <= num2))
+                {
+                    retorno.Add(item);
+                }
+
+            }
+            return retorno;
+        }
+
+        /// <summary>
+        /// Metodo que devuelve una lista de placas segun los valores de consumo proporcionados
+        /// </summary>
+        /// <param name="listaLado1"></param>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <returns></returns>
+        private List<PlacaVideo> lista(List<PlacaVideo> listaLado1, int num)
+        {
+            List<PlacaVideo> retorno = new List<PlacaVideo>();
+
+            foreach (var item in listaLado1)
+            {
+                if (item.Consumo >= num)
+                {
+                    retorno.Add(item);
+                }
+
+            }
+            return retorno;
+        }
+
+
+
+
 
         /// <summary>
         /// Analiza, segun la placa selecciona, la comparacion de meoria ram entre el resto de las placas
@@ -489,11 +599,11 @@ namespace Entidades.Clases_generales
             float promedioIntel = 0;
             float promedioAmd = 0;
 
-            listaMsi = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Msi);
-            listaAsus = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Asus);
-            listaGigabyte = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Gigabyte);
-            listaIntel = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Intel);
-            listaAmd = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Amd);
+            listaMsi = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Msi);
+            listaAsus = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Asus);
+            listaGigabyte = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Gigabyte);
+            listaIntel = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Intel);
+            listaAmd = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Amd);
 
             promedioMsi = CalcularPromedioRam(listaMsi);
             promedioAsus = CalcularPromedioRam(listaAsus);
@@ -624,63 +734,12 @@ namespace Entidades.Clases_generales
             List<PlacaVideo> listaIntel = new List<PlacaVideo>();
             List<PlacaVideo> listaAmd = new List<PlacaVideo>();
 
-            float promedioSinAsignarListaMsi = 0;
-            float promedioGDDR1ListaMsi = 0;
-            float promedioGDDR3ListaMsi = 0;
-            float promedioGDDR5ListaMsi = 0;
 
-            float promedioTotalTipoSinAsignarListaMsi = 0;
-            float promedioTotalTipoGDDR1ListaMsi = 0;
-            float promedioTotalTipoGDDR3ListaMsi = 0;
-            float promedioTotalTipoGDDR5ListaMsi = 0;
-
-            float promedioSinAsignarListaAsus = 0;
-            float promedioGDDR1ListaAsus = 0;
-            float promedioGDDR3ListaAsus = 0;
-            float promedioGDDR5ListaAsus = 0;
-
-            float promedioTotalTipoSinAsignarListaAsus = 0;
-            float promedioTotalTipoGDDR1ListaAsus = 0;
-            float promedioTotalTipoGDDR3ListaAsus = 0;
-            float promedioTotalTipoGDDR5ListaAsus = 0;
-
-            float promedioSinAsignarListaGigabyte = 0;
-            float promedioGDDR1ListaGigabyte = 0;
-            float promedioGDDR3ListaGigabyte = 0;
-            float promedioGDDR5ListaGigabyte = 0;
-
-            float promedioTotalTipoSinAsignarListaGigabyte = 0;
-            float promedioTotalTipoGDDR1ListaGigabyte = 0;
-            float promedioTotalTipoGDDR3ListaGigabyte = 0;
-            float promedioTotalTipoGDDR5ListaGigabyte = 0;
-
-            float promedioSinAsignarListaIntel = 0;
-            float promedioGDDR1ListaIntel = 0;
-            float promedioGDDR3ListaIntel = 0;
-            float promedioGDDR5ListaIntel = 0;
-
-            float promedioTotalTipoSinAsignarListaIntel = 0;
-            float promedioTotalTipoGDDR1ListaIntel = 0;
-            float promedioTotalTipoGDDR3ListaIntel = 0;
-            float promedioTotalTipoGDDR5ListaIntel = 0;
-
-            float promedioSinAsignarListaAmd = 0;
-            float promedioGDDR1ListaAmd = 0;
-            float promedioGDDR3ListaAmd = 0;
-            float promedioGDDR5ListaAmd = 0;
-
-            float promedioTotalTipoSinAsignarListaAmd = 0;
-            float promedioTotalTipoGDDR1ListaAmd = 0;
-            float promedioTotalTipoGDDR3ListaAmd = 0;
-            float promedioTotalTipoGDDR5ListaAmd = 0;
-
-
-            listaMsi = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Msi);
-            listaAsus = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Asus);
-            listaGigabyte = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Gigabyte);
-            listaIntel = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Intel);
-            listaAmd = this.listaDePlacasACargarLado1.FindAll((l) => l.Marca.MarcaProducto == Marca.EMarca.Amd);
-
+            listaMsi = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Msi);
+            listaAsus = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Asus);
+            listaGigabyte = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Gigabyte);
+            listaIntel = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Intel);
+            listaAmd = BuscarSegunPlaca(this.listaDePlacasACargarLado1, Marca.EMarca.Amd);
 
 
             List<PlacaVideo> listaMsiSinAsignar = new List<PlacaVideo>();
@@ -749,70 +808,39 @@ namespace Entidades.Clases_generales
             List<PlacaVideo> listaAmdGDDR5 = new List<PlacaVideo>();
             listaAmdGDDR5 = BuscarSegunTipoMemoria(listaAmd, PlacaVideo.ETipoMemoria.GDDR5);
 
-            
-
-            promedioTotalTipoSinAsignarListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiSinAsignar);
-            promedioTotalTipoGDDR1ListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiGDDR1);
-            promedioTotalTipoGDDR3ListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiGDDR3);
-            promedioTotalTipoGDDR5ListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiGDDR5);
 
 
-            promedioSinAsignarListaMsi = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaMsiSinAsignar, PlacaVideo.ETipoMemoria.SinAsignar);
-            promedioGDDR1ListaMsi = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaMsiGDDR1, PlacaVideo.ETipoMemoria.GDDR1);
-            promedioGDDR3ListaMsi = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaMsiGDDR3, PlacaVideo.ETipoMemoria.GDDR3);
-            promedioGDDR5ListaMsi = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaMsiGDDR5, PlacaVideo.ETipoMemoria.GDDR5);
+            float promedioTotalTipoSinAsignarListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiSinAsignar);
+            float promedioTotalTipoGDDR1ListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiGDDR1);
+            float promedioTotalTipoGDDR3ListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiGDDR3);
+            float promedioTotalTipoGDDR5ListaMsi = CalcularPromedioConsumoDentroDeListaPlacas(listaMsiGDDR5);
 
-          
+            float promedioTotalTipoSinAsignarListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusSinAsignar);
+            float promedioTotalTipoGDDR1ListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusGDDR1);
+            float promedioTotalTipoGDDR3ListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusGDDR3);
+            float promedioTotalTipoGDDR5ListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusGDDR5);
 
-            promedioTotalTipoSinAsignarListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusSinAsignar);
-            promedioTotalTipoGDDR1ListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusGDDR1);
-            promedioTotalTipoGDDR3ListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusGDDR3);
-            promedioTotalTipoGDDR5ListaAsus = CalcularPromedioConsumoDentroDeListaPlacas(listaAsusGDDR5);
+            float promedioTotalTipoSinAsignarListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteSinAsignar);
+            float promedioTotalTipoGDDR1ListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteGDDR1);
+            float promedioTotalTipoGDDR3ListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteGDDR3);
+            float promedioTotalTipoGDDR5ListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteGDDR5);
 
+            float promedioTotalTipoSinAsignarListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelSinAsignar);
+            float promedioTotalTipoGDDR1ListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelGDDR1);
+            float promedioTotalTipoGDDR3ListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelGDDR3);
+            float promedioTotalTipoGDDR5ListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelGDDR5);
 
-            promedioSinAsignarListaAsus = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAsusSinAsignar, PlacaVideo.ETipoMemoria.SinAsignar);
-            promedioGDDR1ListaAsus = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAsusGDDR1, PlacaVideo.ETipoMemoria.GDDR1);
-            promedioGDDR3ListaAsus = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAsusGDDR3, PlacaVideo.ETipoMemoria.GDDR3);
-            promedioGDDR5ListaAsus = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAsusGDDR5, PlacaVideo.ETipoMemoria.GDDR5);
-
-            
-
-            promedioTotalTipoSinAsignarListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteSinAsignar);
-            promedioTotalTipoGDDR1ListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteGDDR1);
-            promedioTotalTipoGDDR3ListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteGDDR3);
-            promedioTotalTipoGDDR5ListaGigabyte = CalcularPromedioConsumoDentroDeListaPlacas(listaGigabyteGDDR5);
-
-
-            promedioSinAsignarListaGigabyte = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaGigabyteSinAsignar, PlacaVideo.ETipoMemoria.SinAsignar);
-            promedioGDDR1ListaGigabyte = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaGigabyteGDDR1, PlacaVideo.ETipoMemoria.GDDR1);
-            promedioGDDR3ListaGigabyte = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaGigabyteGDDR3, PlacaVideo.ETipoMemoria.GDDR3);
-            promedioGDDR5ListaGigabyte = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaGigabyteGDDR5, PlacaVideo.ETipoMemoria.GDDR5);
-            
-
-            promedioTotalTipoSinAsignarListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelSinAsignar);
-            promedioTotalTipoGDDR1ListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelGDDR1);
-            promedioTotalTipoGDDR3ListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelGDDR3);
-            promedioTotalTipoGDDR5ListaIntel = CalcularPromedioConsumoDentroDeListaPlacas(listaIntelGDDR5);
+            float promedioTotalTipoSinAsignarListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdSinAsignar);
+            float promedioTotalTipoGDDR1ListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdGDDR1);
+            float promedioTotalTipoGDDR3ListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdGDDR3);
+            float promedioTotalTipoGDDR5ListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdGDDR5);
 
 
-            promedioSinAsignarListaIntel = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaIntelSinAsignar, PlacaVideo.ETipoMemoria.SinAsignar);
-            promedioGDDR1ListaIntel = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaIntelGDDR1, PlacaVideo.ETipoMemoria.GDDR1);
-            promedioGDDR3ListaIntel = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaIntelGDDR3, PlacaVideo.ETipoMemoria.GDDR3);
-            promedioGDDR5ListaIntel = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaIntelGDDR5, PlacaVideo.ETipoMemoria.GDDR5);
-
-
+            float promedioSinAsignar = CalcularPromedioConsumo(this.listaDePlacasACargarLado1, PlacaVideo.ETipoMemoria.SinAsignar);
+            float promedioGDDR1 = CalcularPromedioConsumo(this.listaDePlacasACargarLado1, PlacaVideo.ETipoMemoria.GDDR1);
+            float promedioGDDR3 = CalcularPromedioConsumo(this.listaDePlacasACargarLado1, PlacaVideo.ETipoMemoria.GDDR3);
+            float promedioGDDR5 = CalcularPromedioConsumo(this.listaDePlacasACargarLado1, PlacaVideo.ETipoMemoria.GDDR5);
            
-
-            promedioTotalTipoSinAsignarListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdSinAsignar);
-            promedioTotalTipoGDDR1ListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdGDDR1);
-            promedioTotalTipoGDDR3ListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdGDDR3);
-            promedioTotalTipoGDDR5ListaAmd = CalcularPromedioConsumoDentroDeListaPlacas(listaAmdGDDR5);
-
-
-            promedioSinAsignarListaAmd = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAmdSinAsignar, PlacaVideo.ETipoMemoria.SinAsignar);
-            promedioGDDR1ListaAmd = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAmdGDDR1, PlacaVideo.ETipoMemoria.GDDR1);
-            promedioGDDR3ListaAmd = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAmdGDDR3, PlacaVideo.ETipoMemoria.GDDR3);
-            promedioGDDR5ListaAmd = CalcularPromedioConsumoSegunTipo(this.listaDePlacasACargarLado1, listaAmdGDDR5, PlacaVideo.ETipoMemoria.GDDR5);
 
 
             StringBuilder sb = new StringBuilder();
@@ -822,43 +850,44 @@ namespace Entidades.Clases_generales
 
             if (tipo == PlacaVideo.ETipoMemoria.SinAsignar)
             {
-                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", CalcularPromedioConsumo(this.listaDePlacasACargarLado1, tipo))} W");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaMsi, promedioSinAsignarListaMsi)} en las placas tipo {Marca.EMarca.Msi}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaAsus, promedioSinAsignarListaAsus)} en las placas tipo {Marca.EMarca.Asus}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaGigabyte, promedioSinAsignarListaGigabyte)} en las placas tipo {Marca.EMarca.Gigabyte}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaIntel, promedioSinAsignarListaIntel)} en las placas tipo {Marca.EMarca.Intel}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaAmd, promedioSinAsignarListaAmd)} en las placas tipo {Marca.EMarca.Amd}");
+                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", promedioSinAsignar)} W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaMsi, promedioSinAsignar)} en las placas tipo {Marca.EMarca.Msi}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoSinAsignarListaMsi)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaAsus, promedioSinAsignar)} en las placas tipo {Marca.EMarca.Asus}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoSinAsignarListaAsus)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaGigabyte, promedioSinAsignar)} en las placas tipo {Marca.EMarca.Gigabyte}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoSinAsignarListaGigabyte)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaIntel, promedioSinAsignar)} en las placas tipo {Marca.EMarca.Intel}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoSinAsignarListaIntel)}W ");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoSinAsignarListaAmd, promedioSinAsignar)} en las placas tipo {Marca.EMarca.Amd}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoSinAsignarListaAmd)}W");
 
             }
            
             if (tipo == PlacaVideo.ETipoMemoria.GDDR1)
             {
-                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", CalcularPromedioConsumo(this.listaDePlacasACargarLado1, tipo))} W");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaMsi, promedioGDDR1ListaMsi)} en las placas tipo {Marca.EMarca.Msi}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaAsus, promedioGDDR1ListaAsus)} en las placas tipo {Marca.EMarca.Asus}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaGigabyte, promedioGDDR1ListaGigabyte)} en las placas tipo {Marca.EMarca.Gigabyte}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaIntel, promedioGDDR1ListaIntel)} en las placas tipo {Marca.EMarca.Intel}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaAmd, promedioGDDR1ListaAmd)} en las placas tipo {Marca.EMarca.Amd}");
+              
+                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", promedioGDDR1)} W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaMsi, promedioGDDR1)} en las placas tipo {Marca.EMarca.Msi}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR1ListaMsi)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaAsus, promedioGDDR1)} en las placas tipo {Marca.EMarca.Asus}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR1ListaAsus)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaGigabyte, promedioGDDR1)} en las placas tipo {Marca.EMarca.Gigabyte}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR1ListaGigabyte)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaIntel, promedioGDDR1)} en las placas tipo {Marca.EMarca.Intel}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR1ListaIntel)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR1ListaAmd, promedioGDDR1)} en las placas tipo {Marca.EMarca.Amd}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR1ListaAmd)}W");
             }
 
             if (tipo == PlacaVideo.ETipoMemoria.GDDR3)
             {
-                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", CalcularPromedioConsumo(this.listaDePlacasACargarLado1, tipo))} W");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaMsi, promedioGDDR3ListaMsi)} en las placas tipo {Marca.EMarca.Msi}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaAsus, promedioGDDR3ListaAsus)} en las placas tipo {Marca.EMarca.Asus}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaGigabyte, promedioGDDR3ListaGigabyte)} en las placas tipo {Marca.EMarca.Gigabyte}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaIntel, promedioGDDR3ListaIntel)} en las placas tipo {Marca.EMarca.Intel}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaAmd, promedioGDDR3ListaAmd)} en las placas tipo {Marca.EMarca.Amd}");
+                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", promedioGDDR3)} W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaMsi, promedioGDDR3)} en las placas tipo {Marca.EMarca.Msi}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR3ListaMsi)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaAsus, promedioGDDR3)} en las placas tipo {Marca.EMarca.Asus}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR3ListaAsus)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaGigabyte, promedioGDDR3)} en las placas tipo {Marca.EMarca.Gigabyte}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR3ListaGigabyte)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaIntel, promedioGDDR3)} en las placas tipo {Marca.EMarca.Intel}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR3ListaIntel)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR3ListaAmd, promedioGDDR3)} en las placas tipo {Marca.EMarca.Amd}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR3ListaAmd)}W");
             }
 
             if (tipo == PlacaVideo.ETipoMemoria.GDDR5)
             {
-                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", CalcularPromedioConsumo(this.listaDePlacasACargarLado1, tipo))} W");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaMsi, promedioGDDR5ListaMsi)} en las placas tipo {Marca.EMarca.Msi}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaAsus, promedioGDDR5ListaAsus)} en las placas tipo {Marca.EMarca.Asus}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaGigabyte, promedioGDDR5ListaGigabyte)} en las placas tipo {Marca.EMarca.Gigabyte}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaIntel, promedioGDDR5ListaIntel)} en las placas tipo {Marca.EMarca.Intel}");
-                sb.AppendLine($"El tipo de memoria {tipo} {CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaAmd, promedioGDDR5ListaAmd)} en las placas tipo {Marca.EMarca.Amd}");
+                sb.AppendLine($"Consumo promedio tipo memoria {tipo} es de: {string.Format("{0:0.00}", promedioGDDR5)} W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaMsi, promedioGDDR5)} en las placas tipo {Marca.EMarca.Msi}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR5ListaMsi)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaAsus, promedioGDDR5)} en las placas tipo {Marca.EMarca.Asus}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR5ListaAsus)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaGigabyte, promedioGDDR5)} en las placas tipo {Marca.EMarca.Gigabyte}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR5ListaGigabyte)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaIntel, promedioGDDR5)} en las placas tipo {Marca.EMarca.Intel}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR5ListaIntel)}W");
+                sb.AppendLine($"{CalcularPorcentajeConsumo(promedioTotalTipoGDDR5ListaAmd, promedioGDDR5)} en las placas tipo {Marca.EMarca.Amd}, cuyo promedio es de {string.Format("{0:0.00}", promedioTotalTipoGDDR5ListaAmd)}W");
             }
 
 
@@ -920,25 +949,8 @@ namespace Entidades.Clases_generales
         }
 
 
-        /// <summary>
-        /// Calcula el promedio de ram de una lista de placas
-        /// </summary>
-        /// <param name="lista"></param>
-        /// <returns></returns>
-        /// 
-        private float CalcularPromedioConsumoSegunTipo(List<PlacaVideo> listaPlacasLado1, List<PlacaVideo> listaPlacasSegunTipo, PlacaVideo.ETipoMemoria eTipo)
-        {
-            float consumo = CalcularPromedioConsumo(listaPlacasLado1, eTipo);
-            float retorno = 0;
+        
 
-            if (listaPlacasSegunTipo.Count > 0)
-            {
-                retorno = consumo / listaPlacasSegunTipo.Count;
-            }
-
-            return retorno;
-
-        }
 
 
         /// <summary>
@@ -977,11 +989,12 @@ namespace Entidades.Clases_generales
         /// <param name="promedio1"></param>
         /// <param name="promedio2"></param>
         /// <returns></returns>
-    
+
 
         private string CalcularPorcentajeConsumo(float promedioTotalSegunTipo, float promedioSegunTipoYMarca)
         {
-            string retorno = "";
+
+                     string retorno = "";
             if (promedioTotalSegunTipo == promedioSegunTipoYMarca && (promedioTotalSegunTipo>0 && promedioSegunTipoYMarca>0))
             {
                 retorno = $"Tiene el mismo consumo que el promedio";

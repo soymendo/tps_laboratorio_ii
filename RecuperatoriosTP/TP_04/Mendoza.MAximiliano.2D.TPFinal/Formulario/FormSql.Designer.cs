@@ -473,7 +473,7 @@ namespace Formulario
             this.Controls.Add(this.panel1);
             this.Name = "FormSql";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DataBase";
+            this.Text = "Base de Datos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

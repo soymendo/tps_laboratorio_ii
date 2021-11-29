@@ -39,7 +39,7 @@ namespace Formulario
             // 
             this.btnCargarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCargarDatos.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnCargarDatos.Location = new System.Drawing.Point(202, 36);
+            this.btnCargarDatos.Location = new System.Drawing.Point(202, 45);
             this.btnCargarDatos.Name = "btnCargarDatos";
             this.btnCargarDatos.Size = new System.Drawing.Size(319, 59);
             this.btnCargarDatos.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace Formulario
             // 
             this.btnComparar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnComparar.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnComparar.Location = new System.Drawing.Point(202, 124);
+            this.btnComparar.Location = new System.Drawing.Point(202, 146);
             this.btnComparar.Name = "btnComparar";
             this.btnComparar.Size = new System.Drawing.Size(319, 59);
             this.btnComparar.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace Formulario
             // 
             this.btnImportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnImportar.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnImportar.Location = new System.Drawing.Point(202, 315);
+            this.btnImportar.Location = new System.Drawing.Point(202, 347);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(319, 59);
             this.btnImportar.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace Formulario
             // 
             this.btnAnalisis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAnalisis.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnAnalisis.Location = new System.Drawing.Point(202, 212);
+            this.btnAnalisis.Location = new System.Drawing.Point(202, 249);
             this.btnAnalisis.Name = "btnAnalisis";
             this.btnAnalisis.Size = new System.Drawing.Size(319, 59);
             this.btnAnalisis.TabIndex = 3;
