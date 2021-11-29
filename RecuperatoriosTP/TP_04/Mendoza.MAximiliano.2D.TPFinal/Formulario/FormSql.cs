@@ -29,7 +29,17 @@ namespace Formulario
             cmbMarca.DataSource = Enum.GetValues(typeof(Marca.EMarca));
             cmbTipoMemoria.DataSource = Enum.GetValues(typeof(PlacaVideo.ETipoMemoria));
             rtbDobleClick.ReadOnly = true;
-            this.listaSql = placaDao.LeerDB();
+
+            try
+            {
+                this.listaSql = placaDao.LeerDB();
+            }
+            catch (Exception exe)
+            {
+
+                MessageBox.Show(exe.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
 
         }
 
