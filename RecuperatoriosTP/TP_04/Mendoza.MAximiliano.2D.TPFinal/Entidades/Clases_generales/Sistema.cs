@@ -404,16 +404,6 @@ namespace Entidades.Clases_generales
 
 
 
-        public bool algo(PlacaVideo p)
-        {
-            bool retorno = false;
-            if (p.Consumo >= 1 && p.Consumo <= 25)
-            {
-                retorno = true;
-            }
-
-            return retorno;
-        }
 
 
         /// <summary>
