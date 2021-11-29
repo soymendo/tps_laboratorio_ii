@@ -21,3 +21,9 @@ C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\obj\De
 C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.pdb
 C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\bin\Debug\Entidades.dll
 C:\Users\Maxi\Desktop\tps_visualStudio\tps_laboratorio_ii\TP_02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_02\Entidades\bin\Debug\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.dll
+C:\Users\Maxi\Desktop\tp-github\tps_laboratorio_ii\TP_02\Entidades\obj\Debug\Entidades.pdb
