@@ -43,43 +43,52 @@ namespace Formulario
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-          
-               
-             this.placaCreada = new PlacaVideo(txtNombre.Text, (Marca.EMarca)cmbMarca.SelectedItem);
-
-            if(txtNombre.Text=="" || cmbMarca.SelectedItem is null)
+            try
             {
-                MessageBox.Show("Nombre y marca son obligtorios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }else
-            {
-                placaCreada.TipoDeMemoria = (PlacaVideo.ETipoMemoria)cmbTipoMemoria.SelectedItem;
-                if (!(txtCapacidaddeRam.Text == "")) { placaCreada.CapacidadDeRam = int.Parse(txtCapacidaddeRam.Text); }
-                if (!(txtFrecuencia.Text == "")) { placaCreada.FrecuenciaDeMemoria = int.Parse(txtFrecuencia.Text); }
-                if (!(txtConsumo.Text == "")) { placaCreada.Consumo = int.Parse(txtConsumo.Text); }
-                if (!(txtLongitud.Text == "")) { placaCreada.Longitud = int.Parse(txtLongitud.Text); }
-                if (!(txtInterfaz.Text == "")) { placaCreada.Interfaz = float.Parse(txtInterfaz.Text); }
-                if (!(txtBitcoin.Text == "")) { placaCreada.MineriaBitcoin = float.Parse(txtBitcoin.Text); }
-                if (!(txtEthereum.Text == "")) { placaCreada.MineriaEthereum = float.Parse(txtEthereum.Text); }
+                this.placaCreada = new PlacaVideo(txtNombre.Text, (Marca.EMarca)cmbMarca.SelectedItem);
 
-               
-                if (sistem.VerificarPlaca(placaCreada)) { MessageBox.Show("PLACA YA AGREGA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-                else 
+                if (txtNombre.Text == "" || cmbMarca.SelectedItem is null)
                 {
-                    placaCreada.NuevosDatos = placaDatos.NuevosDatos;
+                    MessageBox.Show("Nombre y marca son obligtorios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    placaCreada.TipoDeMemoria = (PlacaVideo.ETipoMemoria)cmbTipoMemoria.SelectedItem;
+                    if (!(txtCapacidaddeRam.Text == "")) { placaCreada.CapacidadDeRam = int.Parse(txtCapacidaddeRam.Text); }
+                    if (!(txtFrecuencia.Text == "")) { placaCreada.FrecuenciaDeMemoria = int.Parse(txtFrecuencia.Text); }
+                    if (!(txtConsumo.Text == "")) { placaCreada.Consumo = int.Parse(txtConsumo.Text); }
+                    if (!(txtLongitud.Text == "")) { placaCreada.Longitud = int.Parse(txtLongitud.Text); }
+                    if (!(txtInterfaz.Text == "")) { placaCreada.Interfaz = float.Parse(txtInterfaz.Text); }
+                    if (!(txtBitcoin.Text == "")) { placaCreada.MineriaBitcoin = float.Parse(txtBitcoin.Text); }
+                    if (!(txtEthereum.Text == "")) { placaCreada.MineriaEthereum = float.Parse(txtEthereum.Text); }
 
-                    sistem.ListaDePlacasACargarLado1.Add(placaCreada);
-                    sistem.ListaDePlacasACargarLado2.Add(placaCreada);
 
-                    MessageBox.Show("Agregado con exito!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    rtbDatosCargados.Text = placaCreada.Informar();
-                     xml = placaCreada;
-                     placaCreada=null;
-                     placaDatos = new PlacaVideo();
-                    
+                    if (sistem.VerificarPlaca(placaCreada)) { MessageBox.Show("PLACA YA AGREGA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    else
+                    {
+                        placaCreada.NuevosDatos = placaDatos.NuevosDatos;
 
-                }            
+                        sistem.ListaDePlacasACargarLado1.Add(placaCreada);
+                        sistem.ListaDePlacasACargarLado2.Add(placaCreada);
 
+                        MessageBox.Show("Agregado con exito!!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        rtbDatosCargados.Text = placaCreada.Informar();
+                        xml = placaCreada;
+                        placaCreada = null;
+                        placaDatos = new PlacaVideo();
+
+
+                    }
+
+                }
             }
+            catch (Exception exe)
+            {
+
+                MessageBox.Show(exe.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+               
+            
         }
 
         /// <summary>
