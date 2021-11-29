@@ -16,16 +16,13 @@ namespace Entidades.Clases_generales
     {
         public delegate void Cargar();
         public event Cargar CargarLista;
-
-
-
-
         private DatosGeneric<PlacaVideo> datosOriginales;
-
         private List<PlacaVideo> listaDePlacasACargarLado1;
         private List<PlacaVideo> listaDePlacasACargarLado2;
         private List<Comparar> comparaciones;
         private int capacidadDatosAAlmacenar;
+
+
         /// <summary>
         /// Contructor, inicializa la lista
         /// </summary>
@@ -437,7 +434,6 @@ namespace Entidades.Clases_generales
                 case "entre 1 y 25 W inclusive":
 
 
-                    //listaAnalisis = this.listaDePlacasACargarLado1.FindAll(algo);
                     listaAnalisis = this.listaDePlacasACargarLado1.FindAll((l) => l.Consumo >= 1 && l.Consumo <= 25);
                     cantAnalisis = listaAnalisis.Count;
                     analisisFinal = (cantAnalisis * 100) / cantLista;
@@ -517,7 +513,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Msi)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioMsi}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioMsi)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioMsi, promedioAsus)} que {Marca.EMarca.Asus}, el cual tiene un promedio de {promedioAsus}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioMsi, promedioGigabyte)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioGigabyte}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioMsi, promedioIntel)} que {Marca.EMarca.Intel}, el cual tiene un promedio de {promedioIntel}gb");
@@ -526,7 +522,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Asus)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioAsus}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioAsus)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAsus, promedioGigabyte)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioGigabyte}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAsus, promedioIntel)} que {Marca.EMarca.Intel}, el cual tiene un promedio de {promedioIntel}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAsus, promedioAmd)} que {Marca.EMarca.Amd}, el cual tiene un promedio de {promedioAmd}gb");
@@ -535,7 +531,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Gigabyte)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioGigabyte}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioGigabyte)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioGigabyte, promedioIntel)} que {Marca.EMarca.Intel}, el cual tiene un promedio de {promedioIntel}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioGigabyte, promedioAmd)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioAmd}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioGigabyte, promedioMsi)} que {Marca.EMarca.Msi}, el cual tiene un promedio de {promedioMsi}gb");
@@ -544,7 +540,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Intel)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioIntel}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioIntel)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioIntel, promedioAmd)} que {Marca.EMarca.Amd}, el cual tiene un promedio de {promedioAmd}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioIntel, promedioMsi)} que {Marca.EMarca.Msi}, el cual tiene un promedio de {promedioMsi}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioIntel, promedioAsus)} que {Marca.EMarca.Asus}, el cual tiene un promedio de {promedioAsus}gb");
@@ -553,7 +549,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Amd)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioAmd}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioAmd)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAmd, promedioMsi)} que {Marca.EMarca.Msi}, el cual tiene un promedio de {promedioMsi}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAmd, promedioAsus)} que {Marca.EMarca.Asus}, el cual tiene un promedio de {promedioAsus}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAmd, promedioGigabyte)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioGigabyte}gb");
@@ -851,26 +847,7 @@ namespace Entidades.Clases_generales
         }
 
 
-        /// <summary>
-        /// Calcula el promedio de ram de una lista de placas
-        /// </summary>
-        /// <param name="lista"></param>
-        /// <returns></returns>
-        /// 
-        private float CalcularPromedioConsumoSegunTipo(List<PlacaVideo> listaPlacasLado1, List<PlacaVideo> listaPlacasSegunTipo, PlacaVideo.ETipoMemoria eTipo)
-        {
-            float consumo = CalcularPromedioConsumo(listaPlacasLado1, eTipo);
-            float retorno = 0;
-
-            if (listaPlacasSegunTipo.Count > 0)
-            {
-                retorno = consumo / listaPlacasSegunTipo.Count;
-            }
-
-            return retorno;
-
-        }
-
+       
 
         /// <summary>
         /// Calcula el promedio de ram de una lista de placas

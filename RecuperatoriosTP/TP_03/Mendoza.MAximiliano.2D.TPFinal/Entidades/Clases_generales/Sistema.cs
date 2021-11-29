@@ -618,7 +618,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Msi)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioMsi}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioMsi)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioMsi, promedioAsus)} que {Marca.EMarca.Asus}, el cual tiene un promedio de {promedioAsus}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioMsi, promedioGigabyte)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioGigabyte}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioMsi, promedioIntel)} que {Marca.EMarca.Intel}, el cual tiene un promedio de {promedioIntel}gb");
@@ -627,7 +627,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Asus)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioAsus}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioAsus)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAsus, promedioGigabyte)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioGigabyte}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAsus, promedioIntel)} que {Marca.EMarca.Intel}, el cual tiene un promedio de {promedioIntel}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAsus, promedioAmd)} que {Marca.EMarca.Amd}, el cual tiene un promedio de {promedioAmd}gb");
@@ -636,7 +636,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Gigabyte)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioGigabyte}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioGigabyte)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioGigabyte, promedioIntel)} que {Marca.EMarca.Intel}, el cual tiene un promedio de {promedioIntel}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioGigabyte, promedioAmd)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioAmd}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioGigabyte, promedioMsi)} que {Marca.EMarca.Msi}, el cual tiene un promedio de {promedioMsi}gb");
@@ -645,7 +645,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Intel)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioIntel}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioIntel)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioIntel, promedioAmd)} que {Marca.EMarca.Amd}, el cual tiene un promedio de {promedioAmd}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioIntel, promedioMsi)} que {Marca.EMarca.Msi}, el cual tiene un promedio de {promedioMsi}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioIntel, promedioAsus)} que {Marca.EMarca.Asus}, el cual tiene un promedio de {promedioAsus}gb");
@@ -654,7 +654,7 @@ namespace Entidades.Clases_generales
 
             if (marca == Marca.EMarca.Amd)
             {
-                sb.AppendLine($"{marca} tiene un promedio de ram de {promedioAmd}gb, esto significa : ");
+                sb.AppendLine($"{marca} tiene un promedio de ram de {string.Format("{0:0.00}", promedioAmd)}gb, esto significa : ");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAmd, promedioMsi)} que {Marca.EMarca.Msi}, el cual tiene un promedio de {promedioMsi}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAmd, promedioAsus)} que {Marca.EMarca.Asus}, el cual tiene un promedio de {promedioAsus}gb");
                 sb.AppendLine($"{CalcularPorcentaje(promedioAmd, promedioGigabyte)} que {Marca.EMarca.Gigabyte}, el cual tiene un promedio de {promedioGigabyte}gb");
